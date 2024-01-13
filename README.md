@@ -32,12 +32,20 @@ Open your browser and go to http://localhost:8000/admin/. Log in with the superu
 API Endpoints
 Use the following URLs to interact with the API:
 
+Add a Book:
+POST: Go to http://localhost:8000/api/books/ in your browser or use a tool like curl or Postman.
+json_data = {
+  "title": "History", 
+  "author": "George",
+  "book_type": "Hardcover",
+  "available": true
+}
+
 Get All Books:
 Go to http://localhost:8000/api/books/ in your browser or use a tool like curl or Postman.
 
 Get Books by Author:
 Visit http://localhost:8000/api/author-books/?author={author_name}.
-
 
 
 Borrow a Book:
